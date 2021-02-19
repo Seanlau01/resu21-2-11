@@ -1,0 +1,333 @@
+ /*css reset*/
+ *{margin:0;padding:0;box-sizing:border-box;}
+ a{text-decoration:none;color:black;}
+
+ /*common css*/
+ ul,ol{list-style: none;}
+ .layout{width:1100px;margin:0 auto;}
+ .clearfix::after{content:'';display:block;clear:both;}
+ 
+ /*page css*/
+ body{
+    font:16px/1.5 SimSun,STKaiti,'Microsoft Yahei',SimHei,Helvetica,Arial;
+    color:black;
+}
+ .wrapper{
+     margin:30px auto;
+     background-color:#ECECEC;
+     overflow:auto;
+     }
+
+/*aside模块*/
+ .aside{
+     float:left;
+     width:280px;
+    
+     }
+/*用户模块*/
+  .aside .user{
+    text-align: center;
+      margin:40px 10px 20px 10px;
+  }
+  .aside .user>h1{
+      margin-bottom:20px;
+      font-size:40px;
+  }
+  .aside .user>h1::after{
+      content:'';
+      display:block;
+      width:60px;
+      border-top:1px solid #D6D6D6;
+      margin:20px 100px;
+  }
+  .aside .user::after{
+      content:'';
+      display:block;
+      width:0;
+      height:0;
+      border-bottom:20px solid transparent;
+      border-right:135px solid #D6D6D6;
+      border-top:20px solid #D6D6D6;
+      border-left:135px solid transparent;
+      margin:20px 0;
+  }
+  /*联系模块*/
+  .aside .contact{
+    padding:20px;
+  }
+  .aside .contact>ul>li{
+      border-bottom:1px solid #D6D6D6;
+     line-height:40px; 
+  }
+  .aside .contact>ul>li>span{
+      display:inline-block;
+      border-right:1px solid #D6D6D6;
+      margin-right:10px;
+  }
+  .iconfont{
+       padding-left:10px;
+       padding-right:10px;
+  }
+/*技能模块*/
+  .aside .skills{
+     background:#7BBAAA;
+     color:white;
+  }
+  .aside .skills>h2{
+    padding-top:20px;
+    padding-left:20px;
+ }
+  .aside .skills>dl{
+      padding:20px;
+     
+  }
+  
+  .skills-display{
+      display:block;
+      height:4px;
+      background-color:white;
+      border-radius:20px;
+      margin:10px 0;
+  }
+/*其他模块*/
+.aside .others{
+    padding:20px;
+  }
+  .aside .others>ul{
+      margin-top:20px;
+  }
+  .aside .others>ul>li{
+      border-bottom:1px solid #D6D6D6;
+     line-height:40px; 
+  }
+  .aside .others>ul>li>span{
+      display:inline-block;
+      border-right:1px solid #D6D6D6;
+      margin-right:10px;
+  }
+  .iconfont{
+       padding-left:10px;
+       padding-right:10px;
+  }
+  /*main模块*/
+  .main{
+      background-color:white;
+      margin-left:280px;
+      margin-right:20px;
+      /* height:600px; */
+      overflow:auto;
+      margin-top:40px;
+      margin-bottom:40px;
+      padding:30px;
+  }
+  .main .personal-info{
+      margin:20px;
+  }
+  .main .personal-info>img{
+      width:80px;
+      height:80px;
+      float:left;
+      background-color:grey;
+      margin-right:20px;
+}
+    
+ .main .demo-intro{
+      margin-top:20px;
+}
+
+/*教育经历模块*/  
+ .main .edu-exp{
+   
+ }
+ .main .edu-exp>h1{
+   text-align:center;
+   color:#d9d9d9; 
+   font-size:40px;
+   margin-top:30px;
+}
+.main .edu-exp .detail{
+    display:inline-block;
+}
+.main .edu-exp .detail .pill{
+   background:black;
+   width:120px;
+   height:20px;
+   border-radius:20px;
+   color:white;
+   text-align:center;
+   line-height:20px;
+   float:left;
+   margin-top:5px;
+}
+.main .edu-exp .detail .info{
+   float:left;
+   margin-left:40px;
+   border-left:2px solid #eeeeee;
+   padding-left:40px;
+}
+.main .edu-exp .detail .info>h2{
+    margin-top:-10px;
+}
+.main .edu-exp .detail .info>h2::before{
+   content:'';
+   display:block;
+   width:6px;
+   height:6px;
+   
+   border:2px solid #7BBAAA;
+   left:-46px;
+    position:relative;
+    top:20px;
+    border-radius:10px;
+    
+ }
+ .main .edu-exp .detail .info>p{
+    margin-left:20px;
+    color:#666;
+}
+.main .edu-exp .detail .info>p::before{
+    content:'';
+   display:block;
+   width:4px;
+   height:4px;
+   background:#666666;
+   left:-16px;
+    position:relative;
+    top:15px;
+    border-radius:10px;
+}
+
+/*工作经历模块*/
+.main .work-exp{
+   
+}
+.main .work-exp>h1{
+  text-align:center;
+  color:#d9d9d9; 
+  font-size:40px;
+  margin-top:30px;
+}
+.main .work-exp .detail{
+   display:inline-block;
+ 
+}
+.main .work-exp .detail .pill{
+  background:black;
+  width:120px;
+  height:20px;
+  border-radius:20px;
+  color:white;
+  text-align:center;
+  line-height:20px;
+  float:left;
+  margin-top:10px;
+}
+.main .work-exp .detail .info{
+  
+  float:left;
+  margin-left:160px;
+  border-left:2px solid #eeeeee;
+  padding-left:40px;
+  margin-top:-35px;
+  
+}
+.main .work-exp .detail .info>h2{
+  
+}
+.main .work-exp .detail .info>h2::before{
+  content:'';
+  display:block;
+  width:6px;
+  height:6px;
+  border:2px solid #7BBAAA;
+  left:-46px;
+   position:relative;
+   top:20px;
+   border-radius:10px;
+}
+.main .work-exp .detail .info>ul{
+   list-style:disc;  
+   padding-bottom:20px;
+   margin-bottom:20px;
+ }
+.main .work-exp .detail .info>ul>li{
+   margin-left:20px;
+   color:#666;
+   
+}
+/*项目经历*/
+.main .project-exp{
+   
+}
+.main .project-exp>h1{
+  text-align:center;
+  color:#d9d9d9; 
+  font-size:40px;
+  margin-top:30px;
+}
+.main .project-exp .detail{
+
+ 
+}
+.main .project-exp .detail .pill{
+  background:black;
+  width:120px;
+  height:20px;
+  border-radius:20px;
+  color:white;
+  text-align:center;
+  line-height:20px;
+  float:left;
+  margin-top:10px;
+}
+.main .project-exp .detail .info{
+  
+  float:left;
+  margin-left:160px;
+  border-left:2px solid #eeeeee;
+  padding-left:40px;
+  margin-top:-35px;
+  
+}
+.main .project-exp .detail .info>h3{
+  color:#666;
+}
+.main .project-exp .detail .info>h3::before{
+  content:'';
+  display:block;
+  width:6px;
+  height:6px;
+  border:2px solid #7BBAAA;
+  left:-46px;
+   position:relative;
+   top:20px;
+   border-radius:10px;
+}
+.main .project-exp .detail .info>ul{
+   list-style:disc;  
+   padding-bottom:20px;
+   margin-bottom:20px;
+ }
+.main .project-exp .detail .info>ul>li{
+   margin-left:20px;
+  
+   
+}
+.main .project-exp .detail .info>ul>li>strong{
+    
+    font-weight:bold;
+    
+ }
+
+ /*个人评价*/
+ .main .self-assessment{
+   margin-top:30px;
+ }
+ .main .self-assessment>h1{
+     text-align:center;
+     color:#d9d9d9;
+     font-size:40px;
+ }
+ .main .self-assessment>p{
+    margin-top:10px;
+}
