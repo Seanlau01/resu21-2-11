@@ -331,3 +331,9 @@
  .main .self-assessment>p{
     margin-top:10px;
 }
+/*footer*/
+footer{
+  text-align: center;
+  font-family: Arial;
+  margin-bottom:20px;
+}
