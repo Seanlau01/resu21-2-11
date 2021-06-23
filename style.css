@@ -337,6 +337,7 @@ footer{
   font-family: Arial;
   margin-bottom:20px;
 }
+/*responsive*/
 @media (max-width:768px){
   .layout{width:100%;margin:0 auto;}
   .aside{
@@ -349,4 +350,24 @@ footer{
     width:100%;
     margin:auto;
   }
+.main .edu-exp .detail .info,
+.main .work-exp .detail .info,
+.main .project-exp .detail .info{
+   margin-left:0px;
+   border-left:0px solid #615454;
+   padding-left:0px;
+}
+.main .edu-exp .detail .pill{
+  margin-bottom:20px;
+  margin-right:300px;
+}
+.main .edu-exp .detail .info>h2::before{
+  display:none;
+   
+}
+.main .work-exp .detail .pill,
+.main .project-exp .detail .pill{
+  margin-bottom:40px;
+}
+ 
 }
