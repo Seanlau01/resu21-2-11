@@ -337,3 +337,16 @@ footer{
   font-family: Arial;
   margin-bottom:20px;
 }
+@media (max-width:768px){
+  .layout{width:100%;margin:0 auto;}
+  .aside{
+      width:100%;
+  }
+  .aside .user>h1::after,.aside .user::after{
+   display:none;
+}
+  .main{
+    width:100%;
+    margin:auto;
+  }
+}
